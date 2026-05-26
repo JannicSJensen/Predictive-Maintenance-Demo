@@ -1,0 +1,748 @@
+[
+  {
+    "event_id": "29b53d41-24a3-4395-b0bb-8bcbbdb66007",
+    "enqueued_time": "2026-05-26 16:01:18.393286",
+    "partition_key": "binary_sensor",
+    "source": "home_assistant",
+    "payload": {
+      "timestamp": "2026-05-20 06:44:00",
+      "entity_id": "binary_sensor.kitchen_motion",
+      "domain": "binary_sensor",
+      "state": "on",
+      "attributes": {
+        "friendly_name": "Kitchen Motion"
+      },
+      "room": "kitchen",
+      "source": "home_assistant",
+      "ingestion_path": "azure_event_hub"
+    }
+  },
+  {
+    "event_id": "1e8217d9-d9b6-40f6-96e2-8c62d43bd1c7",
+    "enqueued_time": "2026-05-26 16:01:18.397338",
+    "partition_key": "light",
+    "source": "home_assistant",
+    "payload": {
+      "timestamp": "2026-05-20 06:47:00",
+      "entity_id": "light.hallway",
+      "domain": "light",
+      "state": "on",
+      "attributes": {
+        "brightness": 180
+      },
+      "room": "hallway",
+      "source": "home_assistant",
+      "ingestion_path": "azure_event_hub"
+    }
+  },
+  {
+    "event_id": "628c8a4d-6274-4df8-9af9-40606ac1346f",
+    "enqueued_time": "2026-05-26 16:01:18.523524",
+    "partition_key": "sensor",
+    "source": "home_assistant",
+    "payload": {
+      "timestamp": "2026-05-20 06:55:00",
+      "entity_id": "sensor.home_power_consumption",
+      "domain": "sensor",
+      "state": "1160",
+      "attributes": {
+        "unit_of_measurement": "W"
+      },
+      "room": null,
+      "source": "home_assistant",
+      "ingestion_path": "azure_event_hub"
+    }
+  },
+  {
+    "event_id": "97159714-0352-4369-9f62-c7ab5ad32dd4",
+    "enqueued_time": "2026-05-26 16:01:18.561597",
+    "partition_key": "sensor",
+    "source": "home_assistant",
+    "payload": {
+      "timestamp": "2026-05-20 07:10:00",
+      "entity_id": "sensor.grid_energy_price",
+      "domain": "sensor",
+      "state": "0.22",
+      "attributes": {
+        "unit_of_measurement": "EUR/kWh"
+      },
+      "room": null,
+      "source": "home_assistant",
+      "ingestion_path": "azure_event_hub"
+    }
+  },
+  {
+    "event_id": "bc161f30-65e9-4b1b-9b68-8dcdbfbd2478",
+    "enqueued_time": "2026-05-26 16:01:18.608743",
+    "partition_key": "climate",
+    "source": "home_assistant",
+    "payload": {
+      "timestamp": "2026-05-20 08:28:00",
+      "entity_id": "climate.office",
+      "domain": "climate",
+      "state": "heat",
+      "attributes": {
+        "temperature": 22
+      },
+      "room": "office",
+      "source": "home_assistant",
+      "ingestion_path": "azure_event_hub"
+    }
+  },
+  {
+    "event_id": "5e07564c-0d51-4c07-bc92-5264737041e3",
+    "enqueued_time": "2026-05-26 16:01:18.654760",
+    "partition_key": "binary_sensor",
+    "source": "home_assistant",
+    "payload": {
+      "timestamp": "2026-05-20 08:34:00",
+      "entity_id": "binary_sensor.office_motion",
+      "domain": "binary_sensor",
+      "state": "on",
+      "attributes": {
+        "friendly_name": "Office Motion"
+      },
+      "room": "office",
+      "source": "home_assistant",
+      "ingestion_path": "azure_event_hub"
+    }
+  },
+  {
+    "event_id": "9c36de93-4b7d-44b0-a15a-7f4b3a1377e2",
+    "enqueued_time": "2026-05-26 16:01:18.704333",
+    "partition_key": "sensor",
+    "source": "home_assistant",
+    "payload": {
+      "timestamp": "2026-05-20 12:15:00",
+      "entity_id": "sensor.office_temperature",
+      "domain": "sensor",
+      "state": "21.5",
+      "attributes": {
+        "unit_of_measurement": "C"
+      },
+      "room": "office",
+      "source": "home_assistant",
+      "ingestion_path": "azure_event_hub"
+    }
+  },
+  {
+    "event_id": "def71cf9-7d18-4579-9a2b-fdf142d92642",
+    "enqueued_time": "2026-05-26 16:01:18.753633",
+    "partition_key": "sensor",
+    "source": "home_assistant",
+    "payload": {
+      "timestamp": "2026-05-20 12:16:00",
+      "entity_id": "sensor.home_power_consumption",
+      "domain": "sensor",
+      "state": "980",
+      "attributes": {
+        "unit_of_measurement": "W"
+      },
+      "room": null,
+      "source": "home_assistant",
+      "ingestion_path": "azure_event_hub"
+    }
+  },
+  {
+    "event_id": "c10e709a-e5c1-48f8-b44d-6f322dc0dd5e",
+    "enqueued_time": "2026-05-26 16:01:18.803970",
+    "partition_key": "binary_sensor",
+    "source": "home_assistant",
+    "payload": {
+      "timestamp": "2026-05-20 16:35:00",
+      "entity_id": "binary_sensor.office_motion",
+      "domain": "binary_sensor",
+      "state": "off",
+      "attributes": {},
+      "room": "office",
+      "source": "home_assistant",
+      "ingestion_path": "azure_event_hub"
+    }
+  },
+  {
+    "event_id": "d60ffe7d-cb86-41ce-aa12-c16e9f16d6ca",
+    "enqueued_time": "2026-05-26 16:01:18.856395",
+    "partition_key": "binary_sensor",
+    "source": "home_assistant",
+    "payload": {
+      "timestamp": "2026-05-20 19:42:00",
+      "entity_id": "binary_sensor.living_room_motion",
+      "domain": "binary_sensor",
+      "state": "on",
+      "attributes": {
+        "friendly_name": "Living Room Motion"
+      },
+      "room": "living_room",
+      "source": "home_assistant",
+      "ingestion_path": "azure_event_hub"
+    }
+  },
+  {
+    "event_id": "6dc8805b-910a-4638-85f1-b78f061f8258",
+    "enqueued_time": "2026-05-26 16:01:18.902819",
+    "partition_key": "climate",
+    "source": "home_assistant",
+    "payload": {
+      "timestamp": "2026-05-20 19:48:00",
+      "entity_id": "climate.living_room",
+      "domain": "climate",
+      "state": "heat",
+      "attributes": {
+        "temperature": 21
+      },
+      "room": "living_room",
+      "source": "home_assistant",
+      "ingestion_path": "azure_event_hub"
+    }
+  },
+  {
+    "event_id": "3283d866-f6af-4a89-a79e-f089a687bad9",
+    "enqueued_time": "2026-05-26 16:01:18.944480",
+    "partition_key": "switch",
+    "source": "home_assistant",
+    "payload": {
+      "timestamp": "2026-05-20 19:55:00",
+      "entity_id": "switch.media_center",
+      "domain": "switch",
+      "state": "on",
+      "attributes": {},
+      "room": "living_room",
+      "source": "home_assistant",
+      "ingestion_path": "azure_event_hub"
+    }
+  },
+  {
+    "event_id": "727cd7a6-9f14-4a23-bde8-29ec4dd976d3",
+    "enqueued_time": "2026-05-26 16:01:18.996825",
+    "partition_key": "light",
+    "source": "home_assistant",
+    "payload": {
+      "timestamp": "2026-05-20 22:38:00",
+      "entity_id": "light.hallway",
+      "domain": "light",
+      "state": "on",
+      "attributes": {
+        "brightness": 155
+      },
+      "room": "hallway",
+      "source": "home_assistant",
+      "ingestion_path": "azure_event_hub"
+    }
+  },
+  {
+    "event_id": "ac743c37-2494-4d6a-9237-7bd84faea0ca",
+    "enqueued_time": "2026-05-26 16:01:19.024247",
+    "partition_key": "binary_sensor",
+    "source": "home_assistant",
+    "payload": {
+      "timestamp": "2026-05-20 23:18:00",
+      "entity_id": "binary_sensor.living_room_motion",
+      "domain": "binary_sensor",
+      "state": "off",
+      "attributes": {},
+      "room": "living_room",
+      "source": "home_assistant",
+      "ingestion_path": "azure_event_hub"
+    }
+  },
+  {
+    "event_id": "50b4271f-e3f9-4345-9fa5-9e0fcb74ec50",
+    "enqueued_time": "2026-05-26 16:01:19.063790",
+    "partition_key": "switch",
+    "source": "home_assistant",
+    "payload": {
+      "timestamp": "2026-05-21 00:31:00",
+      "entity_id": "switch.media_center",
+      "domain": "switch",
+      "state": "on",
+      "attributes": {
+        "standby": true
+      },
+      "room": "living_room",
+      "source": "home_assistant",
+      "ingestion_path": "azure_event_hub"
+    }
+  },
+  {
+    "event_id": "4bce2f01-1656-45ef-91d4-8977c8b9b9e8",
+    "enqueued_time": "2026-05-26 16:01:19.101937",
+    "partition_key": "binary_sensor",
+    "source": "home_assistant",
+    "payload": {
+      "timestamp": "2026-05-21 06:43:00",
+      "entity_id": "binary_sensor.kitchen_motion",
+      "domain": "binary_sensor",
+      "state": "on",
+      "attributes": {},
+      "room": "kitchen",
+      "source": "home_assistant",
+      "ingestion_path": "azure_event_hub"
+    }
+  },
+  {
+    "event_id": "6233f7d3-6321-4e4e-b37c-fce2cd5c2640",
+    "enqueued_time": "2026-05-26 16:01:19.143935",
+    "partition_key": "sensor",
+    "source": "home_assistant",
+    "payload": {
+      "timestamp": "2026-05-21 06:50:00",
+      "entity_id": "sensor.home_power_consumption",
+      "domain": "sensor",
+      "state": "1190",
+      "attributes": {
+        "unit_of_measurement": "W"
+      },
+      "room": null,
+      "source": "home_assistant",
+      "ingestion_path": "azure_event_hub"
+    }
+  },
+  {
+    "event_id": "f5dd80f5-ef4a-4f0f-98d1-76925beaec09",
+    "enqueued_time": "2026-05-26 16:01:19.183593",
+    "partition_key": "sensor",
+    "source": "home_assistant",
+    "payload": {
+      "timestamp": "2026-05-21 06:52:00",
+      "entity_id": "sensor.bedroom_humidity",
+      "domain": "sensor",
+      "state": "72",
+      "attributes": {
+        "unit_of_measurement": "%"
+      },
+      "room": "bedroom",
+      "source": "home_assistant",
+      "ingestion_path": "azure_event_hub"
+    }
+  },
+  {
+    "event_id": "a76d65a2-239e-4944-bac2-d40d88a4ddce",
+    "enqueued_time": "2026-05-26 16:01:19.219892",
+    "partition_key": "sensor",
+    "source": "home_assistant",
+    "payload": {
+      "timestamp": "2026-05-21 07:02:00",
+      "entity_id": "sensor.living_room_temperature",
+      "domain": "sensor",
+      "state": "19.1",
+      "attributes": {
+        "unit_of_measurement": "C"
+      },
+      "room": "living_room",
+      "source": "home_assistant",
+      "ingestion_path": "azure_event_hub"
+    }
+  },
+  {
+    "event_id": "ba4cc4dd-883b-47a2-8b0a-79205e5a0cb1",
+    "enqueued_time": "2026-05-26 16:01:19.259986",
+    "partition_key": "climate",
+    "source": "home_assistant",
+    "payload": {
+      "timestamp": "2026-05-21 08:22:00",
+      "entity_id": "climate.office",
+      "domain": "climate",
+      "state": "heat",
+      "attributes": {
+        "temperature": 22
+      },
+      "room": "office",
+      "source": "home_assistant",
+      "ingestion_path": "azure_event_hub"
+    }
+  },
+  {
+    "event_id": "9917ac98-4542-41bf-805a-5f2a567c1f88",
+    "enqueued_time": "2026-05-26 16:01:19.312711",
+    "partition_key": "binary_sensor",
+    "source": "home_assistant",
+    "payload": {
+      "timestamp": "2026-05-21 08:37:00",
+      "entity_id": "binary_sensor.office_motion",
+      "domain": "binary_sensor",
+      "state": "on",
+      "attributes": {},
+      "room": "office",
+      "source": "home_assistant",
+      "ingestion_path": "azure_event_hub"
+    }
+  },
+  {
+    "event_id": "b8e3be1d-d1c5-463d-9cb9-a916c81f167c",
+    "enqueued_time": "2026-05-26 16:01:19.350979",
+    "partition_key": "sensor",
+    "source": "home_assistant",
+    "payload": {
+      "timestamp": "2026-05-21 12:18:00",
+      "entity_id": "sensor.home_power_consumption",
+      "domain": "sensor",
+      "state": "1010",
+      "attributes": {
+        "unit_of_measurement": "W"
+      },
+      "room": null,
+      "source": "home_assistant",
+      "ingestion_path": "azure_event_hub"
+    }
+  },
+  {
+    "event_id": "5b380730-289a-41b1-8771-4aabfb879db3",
+    "enqueued_time": "2026-05-26 16:01:19.400151",
+    "partition_key": "binary_sensor",
+    "source": "home_assistant",
+    "payload": {
+      "timestamp": "2026-05-21 16:32:00",
+      "entity_id": "binary_sensor.office_motion",
+      "domain": "binary_sensor",
+      "state": "off",
+      "attributes": {},
+      "room": "office",
+      "source": "home_assistant",
+      "ingestion_path": "azure_event_hub"
+    }
+  },
+  {
+    "event_id": "c6b4e32a-c2af-43d6-92f3-17ca129d0a71",
+    "enqueued_time": "2026-05-26 16:01:19.453046",
+    "partition_key": "binary_sensor",
+    "source": "home_assistant",
+    "payload": {
+      "timestamp": "2026-05-21 19:40:00",
+      "entity_id": "binary_sensor.living_room_motion",
+      "domain": "binary_sensor",
+      "state": "on",
+      "attributes": {},
+      "room": "living_room",
+      "source": "home_assistant",
+      "ingestion_path": "azure_event_hub"
+    }
+  },
+  {
+    "event_id": "7d319213-1ffc-43be-8fae-99399ff3f496",
+    "enqueued_time": "2026-05-26 16:01:19.496851",
+    "partition_key": "switch",
+    "source": "home_assistant",
+    "payload": {
+      "timestamp": "2026-05-21 19:44:00",
+      "entity_id": "switch.media_center",
+      "domain": "switch",
+      "state": "on",
+      "attributes": {},
+      "room": "living_room",
+      "source": "home_assistant",
+      "ingestion_path": "azure_event_hub"
+    }
+  },
+  {
+    "event_id": "d68d1e05-e6cf-45f1-8d5d-1bdab759970a",
+    "enqueued_time": "2026-05-26 16:01:19.543469",
+    "partition_key": "sensor",
+    "source": "home_assistant",
+    "payload": {
+      "timestamp": "2026-05-21 20:09:00",
+      "entity_id": "sensor.home_power_consumption",
+      "domain": "sensor",
+      "state": "1500",
+      "attributes": {
+        "unit_of_measurement": "W"
+      },
+      "room": null,
+      "source": "home_assistant",
+      "ingestion_path": "azure_event_hub"
+    }
+  },
+  {
+    "event_id": "6dcb083e-9fac-4245-8e22-8fcd30459bce",
+    "enqueued_time": "2026-05-26 16:01:19.596909",
+    "partition_key": "light",
+    "source": "home_assistant",
+    "payload": {
+      "timestamp": "2026-05-21 22:30:00",
+      "entity_id": "light.hallway",
+      "domain": "light",
+      "state": "on",
+      "attributes": {
+        "brightness": 170
+      },
+      "room": "hallway",
+      "source": "home_assistant",
+      "ingestion_path": "azure_event_hub"
+    }
+  },
+  {
+    "event_id": "64153d40-4247-4ad5-913d-8c274fcdb3f0",
+    "enqueued_time": "2026-05-26 16:01:19.645084",
+    "partition_key": "binary_sensor",
+    "source": "home_assistant",
+    "payload": {
+      "timestamp": "2026-05-21 23:12:00",
+      "entity_id": "binary_sensor.living_room_motion",
+      "domain": "binary_sensor",
+      "state": "off",
+      "attributes": {},
+      "room": "living_room",
+      "source": "home_assistant",
+      "ingestion_path": "azure_event_hub"
+    }
+  },
+  {
+    "event_id": "23041ad5-3d86-4455-b751-36f086cfbe11",
+    "enqueued_time": "2026-05-26 16:01:19.699959",
+    "partition_key": "switch",
+    "source": "home_assistant",
+    "payload": {
+      "timestamp": "2026-05-22 00:28:00",
+      "entity_id": "switch.media_center",
+      "domain": "switch",
+      "state": "on",
+      "attributes": {
+        "standby": true
+      },
+      "room": "living_room",
+      "source": "home_assistant",
+      "ingestion_path": "azure_event_hub"
+    }
+  },
+  {
+    "event_id": "d0f77686-8a79-4778-a36e-019bc6b3ab2a",
+    "enqueued_time": "2026-05-26 16:01:19.752216",
+    "partition_key": "binary_sensor",
+    "source": "home_assistant",
+    "payload": {
+      "timestamp": "2026-05-22 06:45:00",
+      "entity_id": "binary_sensor.kitchen_motion",
+      "domain": "binary_sensor",
+      "state": "on",
+      "attributes": {},
+      "room": "kitchen",
+      "source": "home_assistant",
+      "ingestion_path": "azure_event_hub"
+    }
+  },
+  {
+    "event_id": "0d010cec-5a06-40b0-9883-4c3439bf4a50",
+    "enqueued_time": "2026-05-26 16:01:19.798072",
+    "partition_key": "sensor",
+    "source": "home_assistant",
+    "payload": {
+      "timestamp": "2026-05-22 06:48:00",
+      "entity_id": "sensor.home_power_consumption",
+      "domain": "sensor",
+      "state": "1130",
+      "attributes": {
+        "unit_of_measurement": "W"
+      },
+      "room": null,
+      "source": "home_assistant",
+      "ingestion_path": "azure_event_hub"
+    }
+  },
+  {
+    "event_id": "a8c3c181-15ae-4378-ad5b-f84ced85dc2b",
+    "enqueued_time": "2026-05-26 16:01:19.852359",
+    "partition_key": "sensor",
+    "source": "home_assistant",
+    "payload": {
+      "timestamp": "2026-05-22 06:49:00",
+      "entity_id": "sensor.bedroom_humidity",
+      "domain": "sensor",
+      "state": "71",
+      "attributes": {
+        "unit_of_measurement": "%"
+      },
+      "room": "bedroom",
+      "source": "home_assistant",
+      "ingestion_path": "azure_event_hub"
+    }
+  },
+  {
+    "event_id": "6945b37c-f17b-43d2-bef0-f0effc0acd45",
+    "enqueued_time": "2026-05-26 16:01:19.903876",
+    "partition_key": "sensor",
+    "source": "home_assistant",
+    "payload": {
+      "timestamp": "2026-05-22 07:05:00",
+      "entity_id": "sensor.grid_energy_price",
+      "domain": "sensor",
+      "state": "0.19",
+      "attributes": {
+        "unit_of_measurement": "EUR/kWh"
+      },
+      "room": null,
+      "source": "home_assistant",
+      "ingestion_path": "azure_event_hub"
+    }
+  },
+  {
+    "event_id": "ad01c38a-e3fb-47c3-b1c5-5b778daa17bf",
+    "enqueued_time": "2026-05-26 16:01:19.947352",
+    "partition_key": "climate",
+    "source": "home_assistant",
+    "payload": {
+      "timestamp": "2026-05-22 08:19:00",
+      "entity_id": "climate.office",
+      "domain": "climate",
+      "state": "heat",
+      "attributes": {
+        "temperature": 22
+      },
+      "room": "office",
+      "source": "home_assistant",
+      "ingestion_path": "azure_event_hub"
+    }
+  },
+  {
+    "event_id": "a9ac6d68-2aef-4ba8-a1b1-b5ded4eb3598",
+    "enqueued_time": "2026-05-26 16:01:19.996731",
+    "partition_key": "binary_sensor",
+    "source": "home_assistant",
+    "payload": {
+      "timestamp": "2026-05-22 08:35:00",
+      "entity_id": "binary_sensor.office_motion",
+      "domain": "binary_sensor",
+      "state": "on",
+      "attributes": {},
+      "room": "office",
+      "source": "home_assistant",
+      "ingestion_path": "azure_event_hub"
+    }
+  },
+  {
+    "event_id": "4d679d78-38ca-440c-9a9c-7363b9e0752b",
+    "enqueued_time": "2026-05-26 16:01:20.049381",
+    "partition_key": "sensor",
+    "source": "home_assistant",
+    "payload": {
+      "timestamp": "2026-05-22 12:04:00",
+      "entity_id": "sensor.home_power_consumption",
+      "domain": "sensor",
+      "state": "970",
+      "attributes": {
+        "unit_of_measurement": "W"
+      },
+      "room": null,
+      "source": "home_assistant",
+      "ingestion_path": "azure_event_hub"
+    }
+  },
+  {
+    "event_id": "54ee27fb-6c6a-485f-88e4-9f93257cfc9b",
+    "enqueued_time": "2026-05-26 16:01:20.080823",
+    "partition_key": "binary_sensor",
+    "source": "home_assistant",
+    "payload": {
+      "timestamp": "2026-05-22 16:31:00",
+      "entity_id": "binary_sensor.office_motion",
+      "domain": "binary_sensor",
+      "state": "off",
+      "attributes": {},
+      "room": "office",
+      "source": "home_assistant",
+      "ingestion_path": "azure_event_hub"
+    }
+  },
+  {
+    "event_id": "561a3a02-8d07-489d-ad0b-749e9e6c60d9",
+    "enqueued_time": "2026-05-26 16:01:20.142676",
+    "partition_key": "binary_sensor",
+    "source": "home_assistant",
+    "payload": {
+      "timestamp": "2026-05-22 19:36:00",
+      "entity_id": "binary_sensor.living_room_motion",
+      "domain": "binary_sensor",
+      "state": "on",
+      "attributes": {},
+      "room": "living_room",
+      "source": "home_assistant",
+      "ingestion_path": "azure_event_hub"
+    }
+  },
+  {
+    "event_id": "b2e37d59-3d32-48a8-9a3b-8148b9ac9610",
+    "enqueued_time": "2026-05-26 16:01:20.180386",
+    "partition_key": "sensor",
+    "source": "home_assistant",
+    "payload": {
+      "timestamp": "2026-05-22 19:51:00",
+      "entity_id": "sensor.home_power_consumption",
+      "domain": "sensor",
+      "state": "1460",
+      "attributes": {
+        "unit_of_measurement": "W"
+      },
+      "room": null,
+      "source": "home_assistant",
+      "ingestion_path": "azure_event_hub"
+    }
+  },
+  {
+    "event_id": "d4d74873-6df9-4462-86ef-1d292e0f833d",
+    "enqueued_time": "2026-05-26 16:01:20.229259",
+    "partition_key": "sensor",
+    "source": "home_assistant",
+    "payload": {
+      "timestamp": "2026-05-22 20:02:00",
+      "entity_id": "sensor.living_room_temperature",
+      "domain": "sensor",
+      "state": "21.2",
+      "attributes": {
+        "unit_of_measurement": "C"
+      },
+      "room": "living_room",
+      "source": "home_assistant",
+      "ingestion_path": "azure_event_hub"
+    }
+  },
+  {
+    "event_id": "e78acfa2-3386-452c-8f92-5940f1a2e1ad",
+    "enqueued_time": "2026-05-26 16:01:20.271889",
+    "partition_key": "light",
+    "source": "home_assistant",
+    "payload": {
+      "timestamp": "2026-05-22 22:42:00",
+      "entity_id": "light.hallway",
+      "domain": "light",
+      "state": "on",
+      "attributes": {
+        "brightness": 160
+      },
+      "room": "hallway",
+      "source": "home_assistant",
+      "ingestion_path": "azure_event_hub"
+    }
+  },
+  {
+    "event_id": "bd3d32e4-ceea-4e72-971d-6ffb79a9cbad",
+    "enqueued_time": "2026-05-26 16:01:20.324465",
+    "partition_key": "binary_sensor",
+    "source": "home_assistant",
+    "payload": {
+      "timestamp": "2026-05-22 23:16:00",
+      "entity_id": "binary_sensor.living_room_motion",
+      "domain": "binary_sensor",
+      "state": "off",
+      "attributes": {},
+      "room": "living_room",
+      "source": "home_assistant",
+      "ingestion_path": "azure_event_hub"
+    }
+  },
+  {
+    "event_id": "3580edbe-50c4-428d-9797-b8e17a4b8bff",
+    "enqueued_time": "2026-05-26 16:01:20.363133",
+    "partition_key": "switch",
+    "source": "home_assistant",
+    "payload": {
+      "timestamp": "2026-05-22 23:58:00",
+      "entity_id": "switch.media_center",
+      "domain": "switch",
+      "state": "on",
+      "attributes": {
+        "standby": true
+      },
+      "room": "living_room",
+      "source": "home_assistant",
+      "ingestion_path": "azure_event_hub"
+    }
+  }
+]

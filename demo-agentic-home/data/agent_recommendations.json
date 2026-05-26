@@ -1,0 +1,144 @@
+[
+  {
+    "id": "rec_auto_01",
+    "agent_name": "automation_agent",
+    "type": "automation",
+    "title": "Night hallway light auto-off",
+    "rationale": "Hallway light is occasionally left on late at night without nearby motion.",
+    "evidence": [
+      "light.hallway stayed on after 22:30 on multiple days",
+      "low motion activity after 23:15"
+    ],
+    "risk_level": "low",
+    "requires_approval": true,
+    "proposed_action": {
+      "entity": "light.hallway",
+      "service": "light.turn_off"
+    },
+    "yaml": "alias: Turn off hallway light after no motion at night\ntrigger:\n- platform: state\n  entity_id: binary_sensor.kitchen_motion\n  to: 'off'\n  for: 00:08:00\ncondition:\n- condition: time\n  after: '22:00:00'\naction:\n- service: light.turn_off\n  target:\n    entity_id: light.hallway\nmode: single\n"
+  },
+  {
+    "id": "rec_auto_02",
+    "agent_name": "automation_agent",
+    "type": "automation",
+    "title": "Heating-and-window conflict alert",
+    "rationale": "Prevent avoidable heating loss and occupant surprise.",
+    "evidence": [
+      "office heating starts before occupancy window",
+      "energy peak around early office warm-up"
+    ],
+    "risk_level": "low",
+    "requires_approval": true,
+    "proposed_action": {
+      "entity": "climate.office",
+      "service": "notify"
+    },
+    "yaml": "alias: Notify if heating is active while a window remains open\ntrigger:\n- platform: state\n  entity_id: climate.office\n  to: heat\ncondition:\n- condition: state\n  entity_id: binary_sensor.office_window\n  state: 'on'\naction:\n- service: notify.mobile_app\n  data:\n    message: Office window open while heating is active.\nmode: single\n"
+  },
+  {
+    "id": "rec_auto_03",
+    "agent_name": "automation_agent",
+    "type": "automation",
+    "title": "Away mode suggestion after inactivity",
+    "rationale": "Long inactivity windows suggest opportunities for manual away-mode activation.",
+    "evidence": [
+      "overnight motion inactivity",
+      "media center standby events after midnight"
+    ],
+    "risk_level": "low",
+    "requires_approval": true,
+    "proposed_action": {
+      "entity": "home",
+      "service": "notify"
+    },
+    "yaml": "alias: Suggest away mode after prolonged inactivity\ntrigger:\n- platform: state\n  entity_id: binary_sensor.living_room_motion\n  to: 'off'\n  for: 03:00:00\ncondition:\n- condition: state\n  entity_id: switch.media_center\n  state: 'on'\naction:\n- service: notify.mobile_app\n  data:\n    message: No activity detected for 3 hours. Suggest enabling away mode.\nmode: single\n"
+  },
+  {
+    "id": "rec_climate_01",
+    "agent_name": "climate_agent",
+    "type": "climate",
+    "title": "Align office pre-heat with occupancy probability",
+    "rationale": "Office heating starts before occupancy; delay warm-up to reduce waste.",
+    "evidence": [
+      "office preheat occurs before office motion",
+      "detected preheat-before-motion events: 3"
+    ],
+    "risk_level": "medium",
+    "requires_approval": true,
+    "proposed_action": {
+      "entity": "climate.office",
+      "schedule": "weekdays_08_15"
+    },
+    "yaml": null
+  },
+  {
+    "id": "rec_climate_02",
+    "agent_name": "climate_agent",
+    "type": "climate",
+    "title": "Trigger ventilation alert on high morning bedroom humidity",
+    "rationale": "Humidity above healthy comfort range may impact comfort and air quality.",
+    "evidence": [
+      "bedroom humidity exceeded 68% on multiple mornings"
+    ],
+    "risk_level": "low",
+    "requires_approval": false,
+    "proposed_action": {
+      "entity": "sensor.bedroom_humidity",
+      "service": "notify"
+    },
+    "yaml": null
+  },
+  {
+    "id": "rec_energy_01",
+    "agent_name": "energy_agent",
+    "type": "energy",
+    "title": "Cut media-center standby consumption overnight",
+    "rationale": "Standby events appear repeatedly during overnight low-activity periods.",
+    "evidence": [
+      "standby media events: 3",
+      "low motion after 23:15"
+    ],
+    "risk_level": "low",
+    "requires_approval": true,
+    "proposed_action": {
+      "entity": "switch.media_center",
+      "service": "switch.turn_off",
+      "window": "00:15-06:00"
+    },
+    "yaml": null
+  },
+  {
+    "id": "rec_energy_02",
+    "agent_name": "energy_agent",
+    "type": "energy",
+    "title": "Shift discretionary loads to low-price periods",
+    "rationale": "Energy tariff periods can be used for simple demand shifting.",
+    "evidence": [
+      "sensor.grid_energy_price telemetry present",
+      "average power draw: 1175.0W"
+    ],
+    "risk_level": "low",
+    "requires_approval": false,
+    "proposed_action": {
+      "entity": "sensor.grid_energy_price",
+      "strategy": "delay_non_critical_loads"
+    },
+    "yaml": null
+  },
+  {
+    "id": "rec_dashboard_01",
+    "agent_name": "dashboard_builder_agent",
+    "type": "dashboard",
+    "title": "Create agentic home operations dashboard",
+    "rationale": "Unify telemetry, recommendations, and approvals in one presentation-friendly view.",
+    "evidence": [
+      "energy, climate, occupancy, and recommendation streams available"
+    ],
+    "risk_level": "low",
+    "requires_approval": false,
+    "proposed_action": {
+      "target": "lovelace"
+    },
+    "yaml": "title: Agentic Home Intelligence\nviews:\n- title: Overview\n  path: overview\n  cards:\n  - type: entities\n    title: Home Status Overview\n    entities:\n    - sensor.home_power_consumption\n    - sensor.grid_energy_price\n    - climate.office\n    - climate.living_room\n  - type: entities\n    title: Room Comfort\n    entities:\n    - sensor.office_temperature\n    - sensor.living_room_temperature\n    - sensor.bedroom_humidity\n- title: Agent Ops\n  path: agent_ops\n  cards:\n  - type: markdown\n    title: Agent Recommendations\n    content: See generated recommendations and safety decisions in demo output.\n  - type: markdown\n    title: Pending Approvals\n    content: Climate and automation changes requiring manual confirmation.\n  - type: markdown\n    title: Automation Impact\n    content: Expected reduction in standby and unnecessary heating usage.\n"
+  }
+]

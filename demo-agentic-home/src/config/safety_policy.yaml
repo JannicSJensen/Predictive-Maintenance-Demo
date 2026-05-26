@@ -1,0 +1,9 @@
+blocked_domains:
+  - lock
+  - alarm_control_panel
+approval_required_domains:
+  - climate
+  - automation
+comfort_temperature_min: 18
+comfort_temperature_max: 23
+auto_execute_low_risk: false
